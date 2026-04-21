@@ -1,0 +1,6 @@
+flow_id,best_security_margin_method,best_security_margin_value,best_latency_method,best_latency_value,best_q_share_method,best_q_share_value,best_secure_feasible_method,best_secure_feasible_value
+F1,qkd_priority,-0.46014105636137237,latency_first,49.305813301414354,qkd_priority,0.38311620797350715,latency_first,0.0
+F2,proposed_hybrid,-0.40667450631464264,latency_first,41.61002252139867,qkd_priority,0.383326473857497,latency_first,0.0
+F3,pqc_trust,-0.04549608320692811,latency_first,16.034477975573736,qkd_priority,0.36886222896355725,latency_first,0.3333333333333333
+F4,proposed_hybrid,-0.06619075825455774,latency_first,27.270080060247864,latency_first,0.46689561761697623,latency_first,0.3333333333333333
+F5,latency_first,0.20199513794984728,latency_first,9.115646346057192,qkd_priority,0.5174717504741073,latency_first,0.9166666666666666

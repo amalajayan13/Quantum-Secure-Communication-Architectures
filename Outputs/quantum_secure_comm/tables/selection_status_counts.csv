@@ -1,0 +1,5 @@
+selection_status,count
+degraded_unallocated,48
+secure_allocated,38
+best_effort_allocated,31
+blocked,3

@@ -1,0 +1,7 @@
+The proposed_hybrid method ranks first overall in the nominal multi-metric comparison with mean rank 1.222.
+The qkd_priority baseline attains the highest average quantum share (0.4196) in the nominal setting, but also incurs the highest average latency (33.65 ms) and the lowest average security margin (-0.1918) among the compared methods.
+Under compound_stress, all evaluated methods collapse to near-zero secure operation with average SCI approximately equal to zero, indicating a system-level failure boundary.
+In trust_erosion, proposed_hybrid improves average security margin over qkd_priority by +0.0468 and average SCI by +0.0318, while reducing average latency by 3.6517 ms.
+In congestion_heavy, proposed_hybrid improves average security margin over qkd_priority by +0.0491 and average SCI by +0.0391, while reducing average latency by 6.2446 ms.
+In trust_erosion, latency_first slightly exceeds proposed_hybrid in average SCI, showing that the proposed method is best framed as a balanced security-oriented policy rather than a universal optimum on every metric and scenario.
+In congestion_heavy, latency_first slightly exceeds proposed_hybrid in average SCI, showing that the proposed method is best framed as a balanced security-oriented policy rather than a universal optimum on every metric and scenario.

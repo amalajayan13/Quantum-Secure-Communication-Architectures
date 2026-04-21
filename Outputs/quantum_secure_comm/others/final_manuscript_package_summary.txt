@@ -1,0 +1,146 @@
+Quantum-Secure 6G STIN — Final Manuscript Package Summary
+==============================================================================
+
+1. Experiment overview
+- Nodes: 10
+- Edges: 18
+- Flows: 5
+- Time steps: 24
+- Methods compared: proposed_hybrid, latency_first, pqc_trust, qkd_priority
+- Scenarios evaluated: nominal, satellite_channel_stress, trust_erosion, congestion_heavy, compound_stress
+
+2. Overall method ranking (nominal comparison)
+- proposed_hybrid: mean_rank=1.222, secure_feasible_ratio=0.317, allocated_ratio=0.575, avg_security_margin=-0.1567, avg_latency=31.11, avg_SCI=0.1657
+- latency_first: mean_rank=1.778, secure_feasible_ratio=0.317, allocated_ratio=0.575, avg_security_margin=-0.1686, avg_latency=28.61, avg_SCI=0.1589
+- pqc_trust: mean_rank=2.889, secure_feasible_ratio=0.317, allocated_ratio=0.575, avg_security_margin=-0.1773, avg_latency=31.60, avg_SCI=0.1556
+- qkd_priority: mean_rank=3.111, secure_feasible_ratio=0.300, allocated_ratio=0.575, avg_security_margin=-0.1918, avg_latency=33.65, avg_SCI=0.1560
+
+3. Scenario-level best methods by key metric
+- Scenario: nominal
+    * Best SCI: proposed_hybrid (0.1657)
+    * Best secure-feasible ratio: latency_first (0.3167)
+    * Best security margin: proposed_hybrid (-0.1567)
+    * Lowest latency: latency_first (28.61 ms)
+    * Highest quantum share: qkd_priority (0.4196)
+- Scenario: satellite_channel_stress
+    * Best SCI: latency_first (0.0035)
+    * Best secure-feasible ratio: latency_first (0.0083)
+    * Best security margin: pqc_trust (-0.3339)
+    * Lowest latency: latency_first (35.02 ms)
+    * Highest quantum share: qkd_priority (0.0976)
+- Scenario: trust_erosion
+    * Best SCI: latency_first (0.0747)
+    * Best secure-feasible ratio: latency_first (0.1667)
+    * Best security margin: proposed_hybrid (-0.2431)
+    * Lowest latency: latency_first (30.48 ms)
+    * Highest quantum share: qkd_priority (0.3375)
+- Scenario: congestion_heavy
+    * Best SCI: latency_first (0.0804)
+    * Best secure-feasible ratio: latency_first (0.1667)
+    * Best security margin: proposed_hybrid (-0.2221)
+    * Lowest latency: latency_first (32.78 ms)
+    * Highest quantum share: qkd_priority (0.4232)
+- Scenario: compound_stress
+    * Best SCI: latency_first (0.0000)
+    * Best secure-feasible ratio: latency_first (0.0000)
+    * Best security margin: pqc_trust (-0.4038)
+    * Lowest latency: latency_first (38.31 ms)
+    * Highest quantum share: qkd_priority (0.0464)
+
+4. Proposed_hybrid relative to baselines by scenario
+- Scenario: nominal
+    * vs latency_first: delta_secure_feasible_ratio=+0.0000, delta_avg_security_margin=+0.0118, delta_avg_latency=+2.4988 ms, delta_avg_SCI=+0.0068
+    * vs pqc_trust: delta_secure_feasible_ratio=+0.0000, delta_avg_security_margin=+0.0206, delta_avg_latency=-0.4898 ms, delta_avg_SCI=+0.0101
+    * vs qkd_priority: delta_secure_feasible_ratio=+0.0167, delta_avg_security_margin=+0.0351, delta_avg_latency=-2.5405 ms, delta_avg_SCI=+0.0097
+- Scenario: satellite_channel_stress
+    * vs latency_first: delta_secure_feasible_ratio=+0.0000, delta_avg_security_margin=+0.0025, delta_avg_latency=+2.4639 ms, delta_avg_SCI=+0.0000
+    * vs pqc_trust: delta_secure_feasible_ratio=+0.0000, delta_avg_security_margin=-0.0006, delta_avg_latency=+0.6850 ms, delta_avg_SCI=+0.0000
+    * vs qkd_priority: delta_secure_feasible_ratio=+0.0000, delta_avg_security_margin=+0.0060, delta_avg_latency=+2.2117 ms, delta_avg_SCI=+0.0000
+- Scenario: trust_erosion
+    * vs latency_first: delta_secure_feasible_ratio=-0.0083, delta_avg_security_margin=+0.0081, delta_avg_latency=+2.3302 ms, delta_avg_SCI=-0.0015
+    * vs pqc_trust: delta_secure_feasible_ratio=+0.0000, delta_avg_security_margin=+0.0126, delta_avg_latency=-0.8329 ms, delta_avg_SCI=+0.0041
+    * vs qkd_priority: delta_secure_feasible_ratio=+0.0667, delta_avg_security_margin=+0.0468, delta_avg_latency=-3.6517 ms, delta_avg_SCI=+0.0318
+- Scenario: congestion_heavy
+    * vs latency_first: delta_secure_feasible_ratio=-0.0083, delta_avg_security_margin=+0.0095, delta_avg_latency=+2.6785 ms, delta_avg_SCI=-0.0009
+    * vs pqc_trust: delta_secure_feasible_ratio=+0.0000, delta_avg_security_margin=+0.0121, delta_avg_latency=+0.3291 ms, delta_avg_SCI=+0.0048
+    * vs qkd_priority: delta_secure_feasible_ratio=+0.0750, delta_avg_security_margin=+0.0491, delta_avg_latency=-6.2446 ms, delta_avg_SCI=+0.0391
+- Scenario: compound_stress
+    * vs latency_first: delta_secure_feasible_ratio=+0.0000, delta_avg_security_margin=-0.0024, delta_avg_latency=+1.5045 ms, delta_avg_SCI=+0.0000
+    * vs pqc_trust: delta_secure_feasible_ratio=+0.0000, delta_avg_security_margin=-0.0035, delta_avg_latency=-0.4146 ms, delta_avg_SCI=+0.0000
+    * vs qkd_priority: delta_secure_feasible_ratio=+0.0000, delta_avg_security_margin=+0.0016, delta_avg_latency=+1.2857 ms, delta_avg_SCI=+0.0000
+
+5. Flow-level observations under nominal hybrid allocation
+- F1 (satellite_telemetry_backhaul): secure_feasible_ratio=0.000, allocated_ratio=0.000, avg_security_margin=-0.4644, avg_latency=56.97, dominant_selection_status=degraded_unallocated
+- F2 (secure_satellite_access_delivery): secure_feasible_ratio=0.000, allocated_ratio=0.042, avg_security_margin=-0.4067, avg_latency=46.44, dominant_selection_status=degraded_unallocated
+- F3 (uav_control_and_data_return): secure_feasible_ratio=0.333, allocated_ratio=0.958, avg_security_margin=-0.0455, avg_latency=16.04, dominant_selection_status=best_effort_allocated
+- F4 (gateway_to_edge_service_sync): secure_feasible_ratio=0.333, allocated_ratio=0.875, avg_security_margin=-0.0662, avg_latency=27.27, dominant_selection_status=best_effort_allocated
+- F5 (uav_to_local_edge_delivery): secure_feasible_ratio=0.917, allocated_ratio=1.000, avg_security_margin=0.1993, avg_latency=9.12, dominant_selection_status=secure_allocated
+
+6. Path and allocation-state stability
+- F1: path_switch_rate=0.609, status_switch_rate=0.087, blocked_fraction=0.042, secure_fraction=0.000
+- F2: path_switch_rate=0.478, status_switch_rate=0.087, blocked_fraction=0.000, secure_fraction=0.000
+- F3: path_switch_rate=0.304, status_switch_rate=0.348, blocked_fraction=0.042, secure_fraction=0.333
+- F4: path_switch_rate=0.391, status_switch_rate=0.565, blocked_fraction=0.042, secure_fraction=0.333
+- F5: path_switch_rate=0.174, status_switch_rate=0.174, blocked_fraction=0.000, secure_fraction=0.917
+
+7. Defensible manuscript claims
+- The proposed_hybrid method ranks first overall in the nominal multi-metric comparison with mean rank 1.222.
+- The qkd_priority baseline attains the highest average quantum share (0.4196) in the nominal setting, but also incurs the highest average latency (33.65 ms) and the lowest average security margin (-0.1918) among the compared methods.
+- Under compound_stress, all evaluated methods collapse to near-zero secure operation with average SCI approximately equal to zero, indicating a system-level failure boundary.
+- In trust_erosion, proposed_hybrid improves average security margin over qkd_priority by +0.0468 and average SCI by +0.0318, while reducing average latency by 3.6517 ms.
+- In congestion_heavy, proposed_hybrid improves average security margin over qkd_priority by +0.0491 and average SCI by +0.0391, while reducing average latency by 6.2446 ms.
+- In trust_erosion, latency_first slightly exceeds proposed_hybrid in average SCI, showing that the proposed method is best framed as a balanced security-oriented policy rather than a universal optimum on every metric and scenario.
+- In congestion_heavy, latency_first slightly exceeds proposed_hybrid in average SCI, showing that the proposed method is best framed as a balanced security-oriented policy rather than a universal optimum on every metric and scenario.
+
+8. Export inventory
+Tables:
+- candidate_paths_ranked.csv
+- comparison_allocation_decisions.csv
+- comparison_candidate_claims.csv
+- comparison_flow_best_methods.csv
+- comparison_method_flow_summary.csv
+- comparison_method_rank_table.csv
+- comparison_method_regime_summary.csv
+- comparison_method_status_summary.csv
+- comparison_method_summary.csv
+- comparison_method_time_summary.csv
+- comparison_proposed_vs_baselines.csv
+- comparison_time_metric_win_counts.csv
+- comparison_time_metric_wins_detailed.csv
+- decision_table.csv
+- path_stability_summary.csv
+- regime_counts.csv
+- scenario_comparison_allocation_decisions.csv
+- scenario_method_regime_summary.csv
+- scenario_method_status_summary.csv
+- scenario_method_summary.csv
+- scenario_proposed_vs_baselines.csv
+- selection_status_counts.csv
+- simulated_link_states.csv
+- summary_by_flow.csv
+- summary_by_time.csv
+
+Figures:
+- fig10_sci_over_time_by_method.png
+- fig11_secure_feasible_ratio_by_method.png
+- fig12_allocation_state_composition_by_method.png
+- fig13_per_flow_security_margin_by_method.png
+- fig14_latency_vs_quantum_share_by_method.png
+- fig15_functional_score_by_method.png
+- fig16_avg_sci_by_scenario_and_method.png
+- fig17_secure_feasible_ratio_by_scenario_and_method.png
+- fig18_avg_security_margin_by_scenario_and_method.png
+- fig19_avg_latency_by_scenario_and_method.png
+- fig1_role_aware_topology.png
+- fig20a_sci_advantage_heatmap.png
+- fig20b_security_margin_advantage_heatmap.png
+- fig20c_latency_advantage_heatmap.png
+- fig21_latency_vs_sci_across_scenarios.png
+- fig2_allocation_outcomes_over_time.png
+- fig3_sci_over_time.png
+- fig4_secure_feasibility_and_allocation.png
+- fig5_hybrid_contribution_dynamics.png
+- fig6_security_margin_vs_latency.png
+- fig7_per_flow_feasibility_and_allocation.png
+- fig8_path_and_status_switching.png
+- fig9_method_overall_comparison.png

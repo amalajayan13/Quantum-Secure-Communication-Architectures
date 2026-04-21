@@ -1,0 +1,19 @@
+{
+  "project_name": "quantum_secure_comm",
+  "seed": 42,
+  "time_horizon": 24,
+  "max_candidate_paths_per_flow": 8,
+  "max_path_hops": 6,
+  "security_weights": {
+    "alpha_qkd": 0.55,
+    "beta_trust_penalty": 0.22,
+    "lambda_cost": 0.3,
+    "gamma_risk": 0.45
+  },
+  "risk_weights": {
+    "trust": 0.45,
+    "noise": 0.3,
+    "qber": 0.25
+  },
+  "notes": "Architecture-level hybrid QKD-PQC STIN simulation. This notebook models surrogate quantum-security behavior rather than full physical-layer satellite QKD."
+}

@@ -1,0 +1,9 @@
+method,regime,count
+latency_first,sparse,105
+latency_first,transition,15
+pqc_trust,sparse,100
+pqc_trust,transition,20
+proposed_hybrid,sparse,100
+proposed_hybrid,transition,20
+qkd_priority,sparse,100
+qkd_priority,transition,20

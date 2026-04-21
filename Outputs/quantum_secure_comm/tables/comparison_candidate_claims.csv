@@ -1,0 +1,7 @@
+candidate_claim
+Overall multi-metric ranking places 'proposed_hybrid' first with mean rank 1.22.
+"Against 'latency_first', the proposed_hybrid method changes average SCI by +0.0068, average security margin by +0.0118, and average latency by +2.4988 ms."
+"Against 'pqc_trust', the proposed_hybrid method changes average SCI by +0.0101, average security margin by +0.0206, and average latency by -0.4898 ms."
+"Against 'qkd_priority', the proposed_hybrid method changes average SCI by +0.0097, average security margin by +0.0351, and average latency by -2.5405 ms."
+The qkd_priority baseline achieves the highest average quantum share (0.4196) but also incurs the highest average latency (33.65 ms).
+The proposed_hybrid method attains the highest average SCI (0.1657) and the highest average functional score (-0.1331) among the evaluated methods.

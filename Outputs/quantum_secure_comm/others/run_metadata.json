@@ -1,0 +1,12 @@
+{
+  "timestamp_utc": "2026-04-21T18:27:06.224570Z",
+  "python_version": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy_version": "2.2.5",
+  "pandas_version": "2.3.3",
+  "networkx_version": "3.4.2",
+  "matplotlib_version": "3.10.8",
+  "in_colab": false,
+  "root_dir": "F:\\MBZUAI UAE\\13-Quantum-Secure-Comm\\GitHub\\Quantum-Secure-Communication-Architectures\\Outputs\\quantum_secure_comm",
+  "config_path": "F:\\MBZUAI UAE\\13-Quantum-Secure-Comm\\GitHub\\Quantum-Secure-Communication-Architectures\\Outputs\\quantum_secure_comm\\others\\experiment_config.json"
+}

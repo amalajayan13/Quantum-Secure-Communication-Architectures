@@ -1,40 +1,73 @@
-Quantum-Secure 6G STIN Q1 Pioneering Prototype
-============================================================
+Quantum-Secure 6G STIN Hybrid Allocation Prototype
+====================================================================
 Number of nodes: 10
 Number of edges: 18
-Number of flows: 4
-Time steps: 16
+Number of flows: 5
+Time steps: 24
 
-Average flow summary:
-- F1: feasible_ratio=1.000, avg_security_level=2.5854, avg_functional_score=1.8492, avg_q_path=0.6164, avg_p_path=7.2436, avg_trust=0.8932, avg_risk=0.0644, avg_latency=69.95, dominant_regime=transition
-- F2: feasible_ratio=1.000, avg_security_level=2.6670, avg_functional_score=1.4373, avg_q_path=0.4333, avg_p_path=7.9802, avg_trust=0.8315, avg_risk=0.0941, avg_latency=74.95, dominant_regime=transition
-- F3: feasible_ratio=1.000, avg_security_level=2.6247, avg_functional_score=1.3402, avg_q_path=0.4203, avg_p_path=7.8575, avg_trust=0.8515, avg_risk=0.0810, avg_latency=71.66, dominant_regime=transition
-- F4: feasible_ratio=1.000, avg_security_level=2.5828, avg_functional_score=1.3831, avg_q_path=0.7158, avg_p_path=7.0130, avg_trust=0.8766, avg_risk=0.0718, avg_latency=86.64, dominant_regime=transition
+Overall allocation-state counts:
+- degraded_unallocated: 48
+- secure_allocated: 38
+- best_effort_allocated: 31
+- blocked: 3
 
-Average time summary:
-- t=0: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.5597, mean_functional_score=1.4045, mean_q_path=0.4690, mean_p_path=7.5256, mean_latency=76.67, mean_risk=0.0820, SCI=0.06232, regime=transition
-- t=1: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.6175, mean_functional_score=1.5163, mean_q_path=0.5482, mean_p_path=7.5256, mean_latency=75.06, mean_risk=0.0774, SCI=0.07284, regime=transition
-- t=2: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.6334, mean_functional_score=1.4985, mean_q_path=0.5743, mean_p_path=7.5256, mean_latency=76.67, mean_risk=0.0832, SCI=0.07632, regime=transition
-- t=3: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.6511, mean_functional_score=1.5678, mean_q_path=0.5953, mean_p_path=7.5256, mean_latency=75.30, mean_risk=0.0735, SCI=0.07911, regime=transition
-- t=4: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.6168, mean_functional_score=1.5265, mean_q_path=0.5463, mean_p_path=7.5256, mean_latency=75.30, mean_risk=0.0736, SCI=0.07260, regime=transition
-- t=5: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.6531, mean_functional_score=1.5373, mean_q_path=0.6165, mean_p_path=7.4929, mean_latency=77.69, mean_risk=0.0820, SCI=0.08228, regime=saturation
-- t=6: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.6208, mean_functional_score=1.5284, mean_q_path=0.5520, mean_p_path=7.5256, mean_latency=75.30, mean_risk=0.0740, SCI=0.07335, regime=transition
-- t=7: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.6624, mean_functional_score=1.5782, mean_q_path=0.6123, mean_p_path=7.5256, mean_latency=75.06, mean_risk=0.0756, SCI=0.08137, regime=saturation
-- t=8: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.6299, mean_functional_score=1.5400, mean_q_path=0.5650, mean_p_path=7.5256, mean_latency=75.30, mean_risk=0.0751, SCI=0.07508, regime=transition
-- t=9: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.6269, mean_functional_score=1.5325, mean_q_path=0.5615, mean_p_path=7.5256, mean_latency=75.06, mean_risk=0.0760, SCI=0.07462, regime=transition
-- t=10: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.5609, mean_functional_score=1.4414, mean_q_path=0.4665, mean_p_path=7.5256, mean_latency=75.30, mean_risk=0.0753, SCI=0.06198, regime=transition
-- t=11: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.5795, mean_functional_score=1.4305, mean_q_path=0.4973, mean_p_path=7.5256, mean_latency=76.67, mean_risk=0.0820, SCI=0.06608, regime=transition
-- t=12: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.6472, mean_functional_score=1.5573, mean_q_path=0.5906, mean_p_path=7.5256, mean_latency=75.06, mean_risk=0.0763, SCI=0.07848, regime=transition
-- t=13: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.5973, mean_functional_score=1.4491, mean_q_path=0.5236, mean_p_path=7.5256, mean_latency=76.43, mean_risk=0.0838, SCI=0.06958, regime=transition
-- t=14: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.5885, mean_functional_score=1.4866, mean_q_path=0.5059, mean_p_path=7.5256, mean_latency=75.30, mean_risk=0.0729, SCI=0.06723, regime=transition
-- t=15: feasible_flows=4, feasible_ratio=1.000, mean_security_level=2.5946, mean_functional_score=1.4442, mean_q_path=0.5190, mean_p_path=7.5256, mean_latency=76.67, mean_risk=0.0829, SCI=0.06896, regime=transition
+Overall regime counts:
+- sparse: 20
+- transition: 4
 
-Regime counts:
-- transition: 14
-- saturation: 2
+Flow-level summary:
+- F1 (satellite_telemetry_backhaul): secure_feasible_ratio=0.000, allocated_ratio=0.000, avg_security_level=0.1156, avg_security_margin=-0.4644, avg_functional_score=-0.5652, avg_q_share=0.3633, avg_trust=0.7903, avg_risk=0.2745, avg_latency=56.97, dominant_regime=sparse, dominant_selection_status=degraded_unallocated
+- F2 (secure_satellite_access_delivery): secure_feasible_ratio=0.000, allocated_ratio=0.042, avg_security_level=0.1133, avg_security_margin=-0.4067, avg_functional_score=-0.4250, avg_q_share=0.3777, avg_trust=0.7907, avg_risk=0.2700, avg_latency=46.44, dominant_regime=sparse, dominant_selection_status=degraded_unallocated
+- F3 (uav_control_and_data_return): secure_feasible_ratio=0.333, allocated_ratio=0.958, avg_security_level=0.4345, avg_security_margin=-0.0455, avg_functional_score=0.0471, avg_q_share=0.2914, avg_trust=0.8385, avg_risk=0.2270, avg_latency=16.04, dominant_regime=sparse, dominant_selection_status=best_effort_allocated
+- F4 (gateway_to_edge_service_sync): secure_feasible_ratio=0.333, allocated_ratio=0.875, avg_security_level=0.3738, avg_security_margin=-0.0662, avg_functional_score=-0.0969, avg_q_share=0.4654, avg_trust=0.7623, avg_risk=0.2684, avg_latency=27.27, dominant_regime=sparse, dominant_selection_status=best_effort_allocated
+- F5 (uav_to_local_edge_delivery): secure_feasible_ratio=0.917, allocated_ratio=1.000, avg_security_level=0.6593, avg_security_margin=0.1993, avg_functional_score=0.3745, avg_q_share=0.4911, avg_trust=0.8462, avg_risk=0.1710, avg_latency=9.12, dominant_regime=sparse, dominant_selection_status=secure_allocated
+
+Time-level summary:
+- t=0: secure_allocated=2, best_effort=1, degraded=2, blocked=0, secure_feasible_ratio=0.400, allocated_ratio=0.600, mean_security_margin=-0.1750, mean_q_share=0.4006, mean_risk=0.2037, SCI=0.20986, regime=sparse
+- t=1: secure_allocated=1, best_effort=1, degraded=3, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.400, mean_security_margin=-0.2861, mean_q_share=0.2487, mean_risk=0.2481, SCI=0.08967, regime=sparse
+- t=2: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.1607, mean_q_share=0.4185, mean_risk=0.2036, SCI=0.10648, regime=sparse
+- t=3: secure_allocated=1, best_effort=0, degraded=1, blocked=3, secure_feasible_ratio=0.200, allocated_ratio=0.200, mean_security_margin=-0.3260, mean_q_share=0.1529, mean_risk=0.6848, SCI=0.05689, regime=sparse
+- t=4: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.1680, mean_q_share=0.3605, mean_risk=0.1985, SCI=0.10356, regime=sparse
+- t=5: secure_allocated=3, best_effort=0, degraded=2, blocked=0, secure_feasible_ratio=0.600, allocated_ratio=0.600, mean_security_margin=-0.1336, mean_q_share=0.3331, mean_risk=0.2155, SCI=0.30813, regime=transition
+- t=6: secure_allocated=1, best_effort=1, degraded=3, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.400, mean_security_margin=-0.2395, mean_q_share=0.2870, mean_risk=0.2191, SCI=0.09543, regime=sparse
+- t=7: secure_allocated=2, best_effort=1, degraded=2, blocked=0, secure_feasible_ratio=0.400, allocated_ratio=0.600, mean_security_margin=-0.1091, mean_q_share=0.4359, mean_risk=0.2142, SCI=0.21806, regime=sparse
+- t=8: secure_allocated=2, best_effort=1, degraded=2, blocked=0, secure_feasible_ratio=0.400, allocated_ratio=0.600, mean_security_margin=-0.0986, mean_q_share=0.4021, mean_risk=0.2037, SCI=0.21688, regime=sparse
+- t=9: secure_allocated=3, best_effort=0, degraded=2, blocked=0, secure_feasible_ratio=0.600, allocated_ratio=0.600, mean_security_margin=-0.1035, mean_q_share=0.4363, mean_risk=0.2238, SCI=0.32620, regime=transition
+- t=10: secure_allocated=3, best_effort=0, degraded=2, blocked=0, secure_feasible_ratio=0.600, allocated_ratio=0.600, mean_security_margin=-0.1156, mean_q_share=0.4103, mean_risk=0.2154, SCI=0.32216, regime=transition
+- t=11: secure_allocated=3, best_effort=1, degraded=1, blocked=0, secure_feasible_ratio=0.600, allocated_ratio=0.800, mean_security_margin=-0.1383, mean_q_share=0.4232, mean_risk=0.2212, SCI=0.32000, regime=transition
+- t=12: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.2061, mean_q_share=0.4022, mean_risk=0.2444, SCI=0.10117, regime=sparse
+- t=13: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.1121, mean_q_share=0.4329, mean_risk=0.2400, SCI=0.10720, regime=sparse
+- t=14: secure_allocated=2, best_effort=1, degraded=2, blocked=0, secure_feasible_ratio=0.400, allocated_ratio=0.600, mean_security_margin=-0.1261, mean_q_share=0.3967, mean_risk=0.2416, SCI=0.20933, regime=sparse
+- t=15: secure_allocated=2, best_effort=1, degraded=2, blocked=0, secure_feasible_ratio=0.400, allocated_ratio=0.600, mean_security_margin=-0.1118, mean_q_share=0.4608, mean_risk=0.2419, SCI=0.21700, regime=sparse
+- t=16: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.1501, mean_q_share=0.4262, mean_risk=0.2438, SCI=0.10492, regime=sparse
+- t=17: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.1138, mean_q_share=0.4787, mean_risk=0.2373, SCI=0.10957, regime=sparse
+- t=18: secure_allocated=2, best_effort=1, degraded=2, blocked=0, secure_feasible_ratio=0.400, allocated_ratio=0.600, mean_security_margin=-0.1063, mean_q_share=0.4850, mean_risk=0.2278, SCI=0.22160, regime=sparse
+- t=19: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.1424, mean_q_share=0.4459, mean_risk=0.2241, SCI=0.10744, regime=sparse
+- t=20: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.1551, mean_q_share=0.4439, mean_risk=0.2189, SCI=0.10708, regime=sparse
+- t=21: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.1462, mean_q_share=0.4462, mean_risk=0.2137, SCI=0.10791, regime=sparse
+- t=22: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.1859, mean_q_share=0.4361, mean_risk=0.2039, SCI=0.10621, regime=sparse
+- t=23: secure_allocated=1, best_effort=2, degraded=2, blocked=0, secure_feasible_ratio=0.200, allocated_ratio=0.600, mean_security_margin=-0.1512, mean_q_share=0.3832, mean_risk=0.2228, SCI=0.10399, regime=sparse
+
+Path stability summary:
+- F1: path_switch_rate=0.609, status_switch_rate=0.087, unique_paths_used=5, blocked_fraction=0.042, secure_fraction=0.000
+- F2: path_switch_rate=0.478, status_switch_rate=0.087, unique_paths_used=3, blocked_fraction=0.000, secure_fraction=0.000
+- F3: path_switch_rate=0.304, status_switch_rate=0.348, unique_paths_used=4, blocked_fraction=0.042, secure_fraction=0.333
+- F4: path_switch_rate=0.391, status_switch_rate=0.565, unique_paths_used=5, blocked_fraction=0.042, secure_fraction=0.333
+- F5: path_switch_rate=0.174, status_switch_rate=0.174, unique_paths_used=2, blocked_fraction=0.000, secure_fraction=0.917
 
 Exported figures:
-- fig1_topology.png
-- fig2_sci_vs_time.png
-- fig3_feasibility_vs_time.png
-- fig4_qkd_vs_pqc_contribution.png
+- fig10_sci_over_time_by_method.png
+- fig11_secure_feasible_ratio_by_method.png
+- fig12_allocation_state_composition_by_method.png
+- fig13_per_flow_security_margin_by_method.png
+- fig14_latency_vs_quantum_share_by_method.png
+- fig15_functional_score_by_method.png
+- fig1_role_aware_topology.png
+- fig2_allocation_outcomes_over_time.png
+- fig3_sci_over_time.png
+- fig4_secure_feasibility_and_allocation.png
+- fig5_hybrid_contribution_dynamics.png
+- fig6_security_margin_vs_latency.png
+- fig7_per_flow_feasibility_and_allocation.png
+- fig8_path_and_status_switching.png
+- fig9_method_overall_comparison.png

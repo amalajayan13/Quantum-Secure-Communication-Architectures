@@ -1,0 +1,17 @@
+method,selection_status,count
+latency_first,best_effort_allocated,31
+latency_first,blocked,3
+latency_first,degraded_unallocated,48
+latency_first,secure_allocated,38
+pqc_trust,best_effort_allocated,31
+pqc_trust,blocked,3
+pqc_trust,degraded_unallocated,48
+pqc_trust,secure_allocated,38
+proposed_hybrid,best_effort_allocated,31
+proposed_hybrid,blocked,3
+proposed_hybrid,degraded_unallocated,48
+proposed_hybrid,secure_allocated,38
+qkd_priority,best_effort_allocated,33
+qkd_priority,blocked,3
+qkd_priority,degraded_unallocated,48
+qkd_priority,secure_allocated,36
